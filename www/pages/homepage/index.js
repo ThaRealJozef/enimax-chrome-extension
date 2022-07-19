@@ -868,7 +868,7 @@ if(true) {
 
     let verURL = "https://raw.githubusercontent.com/enimax-anime/enimax/main/version.json";
 
-    if(config.url){
+    if(config.chrome){
         verURL = "https://raw.githubusercontent.com/enimax-anime/enimax-chrome-extension/main/version.json";
     }
 
