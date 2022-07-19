@@ -866,7 +866,13 @@ if(true) {
     });
     
 
-    fetch("https://raw.githubusercontent.com/enimax-anime/enimax/main/version.json").then((x) => x.json())
+    let verURL = "https://raw.githubusercontent.com/enimax-anime/enimax/main/version.json";
+
+    if(config.url){
+        verURL = "https://raw.githubusercontent.com/enimax-anime/enimax-chrome-extension/main/version.json";
+    }
+
+    fetch(verURL).then((x) => x.json())
         .then(function(x){
             let curTime = parseInt((new Date()).getTime()/1000);
             let lastUpdate = parseInt(localStorage.getItem("lastUpdate"));

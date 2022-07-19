@@ -2,7 +2,7 @@ var config = {
     "local": localStorage.getItem("local") === "true",
     "remote": localStorage.getItem("remote"),
     "remoteWOport": localStorage.getItem("remoteWOport"),
-    "chrome" : true,
+    "chrome" : false,
 
 };
 
@@ -1329,7 +1329,7 @@ if (localVal != "true" && localVal != "false") {
 
 }
 
-localStorage.setItem("version", "1.0.9");
+localStorage.setItem("version", "1.1.0");
 if (localStorage.getItem("lastUpdate") === null) {
     localStorage.setItem("lastUpdate", "0");
 
