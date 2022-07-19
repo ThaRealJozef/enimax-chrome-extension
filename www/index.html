@@ -1,0 +1,77 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<!-- TODO
+logout redirect
+reset password redirect
+-->
+
+
+<link href="notification/noti.css" rel="stylesheet">
+<script type="text/javascript" src="notification/noti.js"></script>
+<script type="text/javascript" src="extensions/index.js"></script>
+
+
+<style>
+    iframe {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    #player {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .pop{
+
+        bottom: 0 !important;
+        top: auto !important;
+        left:0 !important;
+        width: 100% !important;
+        height:  200px !important;
+				
+    }
+</style>
+
+
+
+
+<body>
+
+    <iframe src="" id="frame"></iframe>
+    <iframe src="fallback.html" id="player" ></iframe>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="assets/bridge.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
