@@ -51,7 +51,7 @@ class notification{
 		let notiData = document.createElement("div");
 		notiData.className = "noti_data";
 
-		notiData.innerText = this.data.notiData;
+		notiData.innerHTML = this.data.notiData;
 		newElem.append(notiData);
 
 
